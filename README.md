@@ -15,6 +15,8 @@ Breaking Bad App, that consumes [Breaking Bad API](https://breakingbadapi.com/) 
 
 ## Demo
 
+[Try it here](https://hamoncordova.com.br/breaking-bad-app/)
+
 ![](src/assets/demo/demo.gif)
 
 ### Install the dependencies
