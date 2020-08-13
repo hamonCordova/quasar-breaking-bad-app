@@ -45,6 +45,7 @@
     <div class="row" v-if="charactersList">
       <div
         v-for="character of charactersList"
+        :key="character.char_id"
         class="col-12 col-sm-6 col-md-3 q-mt-lg q-pa-md"
       >
         <app-character-card :character="character"></app-character-card>

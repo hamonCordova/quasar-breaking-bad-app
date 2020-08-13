@@ -55,7 +55,7 @@ module.exports = {
 
     // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-file
     // required to lint *.vue files
-    'vue',
+    'vue'
 
     // https://github.com/typescript-eslint/typescript-eslint/issues/389#issuecomment-509292674
     // Prettier has not been included as plugin to avoid performance impact
@@ -68,23 +68,24 @@ module.exports = {
     __statics: true,
     process: true,
     Capacitor: true,
-    chrome: true
+    chrome: trues
   },
 
   // add your custom rules here
   rules: {
     'prefer-promise-reject-errors': 'off',
-      "no-explicit-any": "off",
-    'no-unsafe-call: ': 'off',
-    'no-inferrable-types: ': 'off',
-    'no-unused-vars: ': 'off',
 
     // TypeScript
     quotes: ['warn', 'single', { avoidEscape: true }],
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
 
     // allow debugger during development only
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
-}
+};

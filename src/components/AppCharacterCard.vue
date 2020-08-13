@@ -34,6 +34,7 @@
         <span class="text-bold block q-ml-xs">Occupations</span>
         <q-badge
           v-for="(occupation, index) in character.occupation"
+          :key="index"
           color="orange"
           text-color="black"
           :label="occupation"
@@ -49,6 +50,7 @@
         <span class="text-bold block q-ml-xs">Breaking Bad Appearance</span>
         <q-badge
           v-for="(appearance, index) in character.appearance"
+          :key="index"
           color="orange"
           text-color="black"
           :label="appearance"
@@ -67,6 +69,7 @@
         <span class="text-bold block q-ml-xs">Better Call Saul Appearance</span>
         <q-badge
           v-for="(appearance, index) in character.better_call_saul_appearance"
+          :key="index"
           color="orange"
           text-color="black"
           :label="appearance"
